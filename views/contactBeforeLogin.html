@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="blue lighten-3">
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo" style="text-decoration: none;">Share Article</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/" style="text-decoration: none;">Home</a></li>
+                <li><a href="/about" style="text-decoration: none;">About</a></li>
+                <li><a href="/contactUs" style="text-decoration: none;">Contact Us</a></li>
+                <li><a href="/login" style="text-decoration: none;">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" style="padding: 0.6cm">
+        <div>
+            <form method="POST" class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea class="materialize-textarea" name="post" id="post" type="text"></textarea>
+                        <label for="post">Message</label>
+                    </div>
+                    <div class="row">
+                        <button type="submit" class="waves-effect waves-light btn"><i
+                                class="material-icons left"></i>Send
+                            Message</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

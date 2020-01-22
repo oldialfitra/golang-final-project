@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="blue lighten-3">
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo" style="text-decoration: none;">Share Article</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/" style="text-decoration: none;">Home</a></li>
+                <li><a href="/about" style="text-decoration: none;">About</a></li>
+                <li><a href="/contactUsAdmin" style="text-decoration: none;">Contact Us</a></li>
+                <li><a href="/allArticle" style="text-decoration: none;">Article</a></li>
+                <li><a href="/logout" style="text-decoration: none;">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" style="padding: 0.6cm">
+        <div>
+            <form method="POST" class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="You may not fill this out if the title is the same." name="title" id="title"
+                            type="text">
+                        <label for="title">Title</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea placeholder="You may not fill this out if the content is the same." class="materialize-textarea" name="post" id="post" type="text"></textarea>
+                        <label for="post">Content</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <select name="isPublish">
+                            <option value="" disabled selected>Do you want to publish the article?</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit" class="waves-effect waves-light btn"><i
+                            class="material-icons left"></i>Edit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+
+    </script>
+</body>
+
+</html>
